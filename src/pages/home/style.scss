@@ -1,0 +1,108 @@
+@import "~bootstrap/scss/bootstrap";
+$grid-columns:      12;
+
+.wrap{
+    background: rgba(0,0,0,0.3);
+}
+.box {
+    justify-content: center;
+    height:100vh;
+    background: rgba(99, 24, 110, 0.3);
+}
+
+#content{
+    position: relative;
+    width: 100%;
+}
+.content_page{
+    position: relative;
+    align-items: center;
+    height:100vh;
+   // padding: 1rem;
+    color:white;
+    text-shadow:  2px 2px 1px #383636;
+    p {
+        text-align: justify;
+    }
+
+}
+#nav{
+  background-color: rgba(48, 47, 47, 0.425);
+  border-top:1px solid rgba(255, 255, 255, 0.1);
+
+}
+@keyframes render_close {
+    from {
+        opacity: 1;
+        width: 100%;
+       
+    }
+    60%{
+        opacity: 0;
+       
+      
+    }
+    to {
+        opacity: 0;
+        width: 0;
+      
+    }
+}
+@keyframes render_open {
+    from {
+      width: 0; 
+      opacity: 0;
+    }
+    60%{
+        opacity: 0;
+        width:173px;
+       
+      
+    }
+    to {
+        opacity: 1;
+        width: 100%;  
+    }
+  }
+
+.content_open{
+    animation: content_open 1.5s ease;
+    animation-fill-mode: forwards;
+}
+.content_close{
+    animation: content_close 1.5s ease;
+    animation-fill-mode: forwards;
+}
+.render_open{
+    animation: render_open 1.5s ease;
+    animation-fill-mode: forwards;
+  }
+  .render_close{
+    animation: render_close 1.5s ease;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes content_close {
+    from {
+        opacity: 1;
+       
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes content_open {
+    from {
+      opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+  }
+
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+

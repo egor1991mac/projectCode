@@ -1,0 +1,167 @@
+@import "~bootstrap/scss/bootstrap";
+#nav{
+    z-index: 0;
+    margin: 0 auto;
+    
+    ul{
+        display:flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0.5em;
+        li{ 
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            width:16%;
+            a{  display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                padding: 5px;
+                color:rgb(143, 142, 142);
+              //  border-bottom: 2px solid transparent;
+                
+                span{
+                    opacity: 0;
+                    width: 0;
+                    
+                }
+            
+            }
+        }
+        li:hover{
+            a{  
+                color:white;
+                text-decoration: none;
+          //      animation: border_open 1s ease;
+          //      animation-fill-mode: forwards;
+                span{
+                    animation: alpha_open 1s ease;
+                    animation-fill-mode: forwards;
+                }
+                .material-icons {
+                    font-family: 'Material Icons';
+                    font-weight: normal;
+                    font-style: normal;
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 0.3rem;
+                    color:white;
+                }
+            }
+            
+        }
+}
+
+
+.current{
+     a{  
+        color:white;
+        text-decoration: none;
+     //   animation: border_open 1s ease;
+     //   animation-fill-mode: forwards;
+        span{
+            animation: alpha_open 1s ease;
+            animation-fill-mode: forwards;
+        }
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            position: relative;
+            margin-right: 0.3rem;
+            color:white;
+          }
+    }
+}
+.not_current{
+    a{  
+       color:white;
+       text-decoration: none;
+    //   animation: border_close 1s ease;
+    //   animation-fill-mode: forwards;
+       span{
+           animation: alpha_close 1s ease;
+           animation-fill-mode: forwards;
+       }
+   }
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.3rem;
+    color:rgb(143, 142, 142);
+  }
+}
+  
+  @keyframes alpha_open {
+    from {
+      width: 0; 
+      opacity: 0;
+    }
+    60%{
+        opacity: 0;
+        width: 100%;
+       
+      
+    }
+    to {
+        opacity: 1;
+        width:100%;
+       
+      
+    }
+  }
+   
+
+  @keyframes border_open {
+    
+    60%{
+       border-bottom: 2px solid white;
+      
+    }
+    to {
+        
+       border-bottom: 2px solid white;
+      
+    }
+  }  
+  @keyframes alpha_close {
+    from {
+        opacity: 1;
+        width: 100%;
+       
+    }
+    60%{
+        opacity: 0;
+        width: 100%;
+      
+    }
+    to {
+        opacity: 0;
+        width: 0;
+      
+    }
+  }
+ 
+  @keyframes border_close {
+    
+    60%{
+       border-bottom: 2px solid transparent;
+      
+    }
+    to {
+        
+       border-bottom: 2px solid transparent;
+      
+    }
+  } 
+ 

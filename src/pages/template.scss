@@ -1,0 +1,104 @@
+@import "~bootstrap/scss/bootstrap";
+$grid-columns:      12;
+body{
+    //background: url('img/bg.jpg') no-repeat;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#content {
+    font-size: 0.9rem;
+  }
+#nav{
+    li {
+    font-size: 0.7rem;
+    }
+    .material-icons {
+        font-size:0.9rem;
+    }
+}
+#preload{
+    .text{
+        text-align: center;
+    }
+}
+.item_slide{
+    h2{
+        font-size:16px;
+    }
+}
+  @include media-breakpoint-up(sm) {
+    #content {
+      font-size: 0.9rem;
+    }
+    #nav{
+        li {
+        font-size: 0.8rem;
+        }
+        .material-icons {
+        font-size:1rem;
+        }
+    }
+    .item_slide{
+        h2{
+            font-size:20px;
+        }
+    }
+    #preload{
+        .text{
+            text-align: left;
+        }
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    #content {
+      font-size: 1rem;
+    }
+    .item_slide{
+        h2{
+            font-size:24px;
+        }
+    }
+    #preload{
+        .text{
+            text-align: left;
+        }
+    }
+  }  
+  
+  @include media-breakpoint-up(lg) {
+    #content {
+      font-size: 1.3rem;
+    }
+    #nav{
+      
+        li {
+        font-size: 1.3rem;
+        }
+        .material-icons {
+        font-size:1.5rem;
+        }
+    }
+    .item_slide{
+        h2{
+            font-size:32px;
+        }
+    }
+    #preload{
+        .text{
+            text-align: left;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    
+    #preload{
+        .text{
+            margin:0;
+        }
+    }
+}
