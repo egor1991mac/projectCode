@@ -6,7 +6,9 @@ import mask from 'jquery-mask-plugin';
 $.validator.addMethod("lettersonly", function(value, element) {
     return this.optional(element) || /^[a-zа-яA-ZА-Я\s]+$/i.test(value);
   }, "Letters only please"); 
-
+  $.validator.addMethod("phone", function(value, element) {
+    return this.optional(element) || /^[+()\s1-9/]+$/i.test(value);
+  }, "Letters only please"); 
 export default class form{
     
     constructor(selector,sendFunction,rules){
@@ -15,7 +17,7 @@ export default class form{
         this.rules = rules ? rules : this.validateRules(sendFunction || function(){alert('send function')});
         this.elem_render();
         this.validateForm();
-           
+        this.mask_phone();
     }
     create_elem(){
         const node  = document.createElement('div');
@@ -25,6 +27,9 @@ export default class form{
     }
     elem_render(){
         this.node.innerHTML = template();
+    }
+    mask_phone(){
+        $('#cphone').mask('+375(00) 00-00-0000')
     }
     validateForm(){
         let form = $(this.node.children[0]).validate(this.rules);
@@ -63,7 +68,9 @@ export default class form{
                 },
                 phone:{
                     required:true,
-                    number:true
+                   // phone:true,
+                    maxlength:19
+               
                 }
             },
             messages:{
@@ -80,7 +87,7 @@ export default class form{
                     },
                 phone:{
                     required:'Это поле обязательно для заполнения',
-                    number:'Значение в поле не соответсвует формату телефона'
+                    //number:'Значение в поле не соответсвует формату телефона'
                     },
             }
             
