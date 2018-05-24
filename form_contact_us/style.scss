@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    flex-direction: column;
+    .error{
+       
+        max-width: 100%;
+        padding: .5rem;
+        margin-top: .1rem;
+        font-size: .875rem;
+        line-height: 1;
+        color: #fff;
+        background-color: rgba(220, 53, 69, 0.9);
+        border-radius: .2rem;
+        text-shadow: none;
+    }
+    .succes{
+        max-width: 100%;
+        padding: .5rem;
+        margin-top: .1rem;
+        font-size: .875rem;
+        line-height: 1;
+        color: #fff;
+        border:0.1rem solid rgba(3, 211, 55, 0.9);
+        border-radius: .3rem;
+        text-shadow: none;
+    }
+}

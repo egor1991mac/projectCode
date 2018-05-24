@@ -1,0 +1,17 @@
+.slider
+    each val in items
+        .slide.col-6
+            .img
+                img(src=val.img)
+            .item_slide
+                a(href=val.href)
+                    h2=val.name
+        
+        
+    .arrow_next.arrow
+            svg(xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24")
+                path( fill="white" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z")
+    .arrow_prev.arrow
+            svg(xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24")
+                path( fill="white" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z")
+            

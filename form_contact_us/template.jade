@@ -1,0 +1,15 @@
+form#contactForm.form-group.col-4(action="")
+    legend  Форма обратной связи
+    .form-item
+        label.mb-0.mt-1(for="cemail") Email
+        input.form-control(id="cemail" name="email"  type="text" required)
+    .form-item
+        label.mb-0.mt-1(for="cname")   Ваше имя
+        input.form-control(type="text" id="cname" name="name" required)
+    .form-item
+        label.mb-0.mt-1(for="cphone")   Ваш контактный телефон
+        input.form-control(type="text" id="cphone" name="phone")
+    .form-item
+        label.mb-0.mt-1(for='ctext') Ваше сообщение
+        textarea.form-control(name="text", cols="10", rows="5" id="ctext")
+    button.btn.btn-primary.mb-0.mt-2(type="submit") Отправить
