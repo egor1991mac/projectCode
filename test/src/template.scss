@@ -1,0 +1,975 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+
+body{
+    background: #000000;
+}
+input{
+    outline:none !important;
+}
+.fade{
+    opacity: 0;
+}
+h1,h2,h3,h4,h5{
+    font-size:16px;
+}
+.container{
+    max-width: 1430px !important;
+}
+.max-width-1700{
+    max-width: 1700px !important;
+}
+ul,li,p{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#sub-menu{
+    width:100%;
+    background: #0e0e0e;
+    z-index: 1031 !important;
+    li{
+        &:last-child{
+            transform: translateY(5px);
+            z-index: 1050;
+        }
+    }
+    .logo_sub-menu{
+        font-size: 14px;
+        font-family: "PT Sans";
+        color: rgb(118, 118, 118);
+        font-style: italic;
+    }
+    .row{
+        height:64px;
+    }
+    .nav{
+        display: flex;
+        height: 35px;
+        width:212px;
+        justify-content: space-between;
+       
+
+        .icon_shop-cart{
+            display: flex;
+            align-items: center;
+            .counter{
+                font-size: 11px;
+                font-family: "PT Sans";
+                color: rgb(255, 255, 255);
+                
+                width:20px;
+                height: 20px;
+                background-color: #f2cea2;
+                border-radius: 20px;
+                line-height: 19px;
+                text-align: center;
+                margin-left: 15px;
+            }
+        }
+
+    
+    }
+    .auth{
+        
+        .auth-form{
+            border-radius: 4px;
+            opacity: 0;
+            transition: opacity 1s;
+            padding: 1em;
+            background: #0e0e0e;
+            border:2px solid #f2cea2;
+            top:30px;
+            color:white;
+            width:290px;
+            
+            position: absolute;
+            flex-direction: column;
+            z-index: -100;
+            visibility: hidden;
+            input{
+                background: black;
+                color: #f2cea2;
+                border-radius: 4px;
+                padding: 10px;
+                border:1px solid #f2cea2;
+                background: black;
+            }
+            button{
+                background-color: #f2cea2;
+                width: 100%;
+                height: 50px;
+                font-size: 18px;
+                font-family: "Bebas Neue";
+                color: #705142;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.2;
+                border: none;
+                border-radius: 4px;
+            }
+            label{
+                
+                text-decoration: none;
+                font-size: 18px;
+                color: #ffff;
+                font-family: "BebasNeueBold";
+               
+            }
+            
+        }
+        .active{
+            visibility: visible;
+            display: flex;
+            z-index: 1050 !important;
+            opacity: 1 !important;
+        }
+       
+    
+    }
+    .activeted{
+        fill: #f2cea2 !important;
+        z-index: 1040 !important;
+    }
+     .search{
+        .close{
+            top:5px;
+               right: 5px;
+               position: absolute;
+           path{
+               fill:#f2cea2;
+               
+           }
+        }
+    
+        form{
+            z-index: -1;
+            width:0;
+            transition: width 0.5s;
+            
+            position: absolute;
+            visibility:hidden;
+            //margin: 0 0 0 3px;
+            input{
+                width:100%;
+                height: 35px;
+                padding: 0;
+                //border-color: transparent;
+                background: black;
+                color: #f2cea2;
+                border-radius: 4px;
+                padding-left: 10px;
+                border:2px solid #f2cea2;
+                background: black;
+            }
+           
+        }
+        .active{
+
+            visibility: visible;
+            width:100%;
+            z-index: 1060 !important;
+            
+    }
+       
+        
+    }
+   
+    svg{
+        fill:white;
+        transition: fill 0.5s;
+    }
+    svg:hover{
+        fill:#f2cea2 !important;
+    }
+}
+
+#slider{
+    position: relative;
+    z-index: 1;
+    #nav{
+        margin-top:61px;
+        font-family: "BebasNeueBold";
+        color: rgb(255, 255, 255);
+        background: transparent;
+        transition: background 1s;
+        
+        h2{
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            font-size:1.875em;
+            position: relative;
+            top:3px;
+            margin-right: 18px;
+            
+        }
+        .slogan{
+            font-size: 0.875em;
+            font-family: "PT Sans";
+            color: rgb(129, 129, 129);
+            font-style: italic;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width:570px;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size:18px;
+                    color:#ffff;
+                    border-bottom:2px solid transparent;
+                    transition: all 1s;
+                }
+                a:hover{
+                    color:#977869;
+                    border-bottom:2px solid #977869;
+                }
+                
+            }
+        }
+        svg{
+            margin-right: 30px;
+        }
+        .phone{
+            font-size: 24px;
+            font-family: "BebasNeueBold";
+            letter-spacing: 2px;
+        }
+    }
+    .scroll{
+        background: rgba(0, 0, 0, 0.87) !important;
+    }
+        
+        width: 100%;
+        h3{
+            font-size: 82px;
+            font-family: "BebasNeueBold";
+           
+        }
+        .content{
+            
+            position: absolute;
+        }
+        .height{
+            height: 900px;
+        }
+        .carousel-caption{
+            margin-top:257px;
+           
+        }
+        .carousel-indicators
+        {   width: 100%;
+            justify-content: inherit;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            z-index: 10 !important;
+            margin-bottom: 91px;
+            position: initial !important;
+            li{
+            
+                width:12px;
+                height: 12px;
+                background: #5d4a41;
+                border-radius: 12px;
+                margin-right: 18px;
+                
+            }
+            .active{
+                background: #b6907e !important;
+                transition: background 0.5s;
+            }
+        }
+        .buttons{
+            margin-top:70px;
+            margin-left:6px;
+            a{
+                
+                font-size: 18px;
+                    font-family: "Bebas Neue";
+                    color: rgb(151, 120, 105);
+                    font-weight: bold;
+                border:3px solid #977869;
+                padding: 20px 30px;
+                margin-right: 30px;
+                text-decoration: none;
+                transition: all 0.3s;
+
+                
+                  
+
+                &:hover{
+                    color: #b6907e;
+                    border-color:  #b6907e;
+                }
+            }
+        }
+    
+}
+#services
+{
+    width: 100%;
+    background: url('img/servicesbg.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    p{
+        color:#858585;
+        
+            font-size: 24px;
+            font-family: "PT Sans";
+            color: rgb(133, 133, 133);
+            line-height: 1.75;
+            text-align: left;
+            
+          
+          
+    }
+    .height{
+        height: 900px;
+    }
+    .arrow{
+        svg{
+            margin-right: 20px;
+            fill:white;
+            &:hover{
+                fill: rgb(133, 133, 133);
+            }
+        }
+
+    }
+    h4{
+        
+            font-size: 48px;
+            font-family: "Bebas Neue";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            margin: 54px 0 41px;
+    }
+    
+   
+}
+#collection{
+    .products{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        position: relative;
+    
+    }
+    .owl-item{
+        img{
+            display: block;
+            width: auto !important;
+        }
+    }
+    .items{
+        .owl-carousel{
+            display: none !important;
+        }
+        .activeted{
+            display: block !important;
+        }
+    }
+   
+    .next, .prev{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .my-cards{
+        
+        height: 633px;
+        width: 100%;
+        border-width: 1px;
+        border-color: rgb(43, 43, 43);
+        border-style: solid;
+        max-width: 413px;
+        img{
+            height: 384px;
+        }
+        h5{
+            
+                font-size: 30px;
+                font-family: "Bebas Neue";
+                color: rgb(245, 245, 245);
+                font-weight: bold;
+                line-height: 1.2;
+                margin: 60px 0 30px;
+              
+        }
+        p{
+            font-size: 24px;
+            font-family: "PT Sans";
+            color: rgb(182, 144, 126);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            
+          }
+          
+          
+    }
+    .heading{
+        margin-top: 91px;
+        h3{
+            font-size: 48px;
+                font-family: "Bebas Neue";
+                color: rgb(245, 245, 245);
+                font-weight: bold;
+                line-height: 1.2;
+        }
+    }
+    ul{
+        width: 203px;
+        justify-content: space-between;
+        li{ font-size: 18px;
+            font-family: "PT Sans";
+            color: rgb(245, 245, 245);
+            //font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-decoration: none;
+            position: relative;  
+                    
+        }
+        .active{
+            &::after{
+                content: '';
+                display: block;
+                z-index: -1;
+                background: #b6907e;
+                width: 100%;
+                height:13px;
+                top:10px;
+                position: absolute;
+            } 
+        }
+        
+    }
+}
+
+#brand{
+    .row{
+        
+        background:#0e0e0e;
+}
+.height{
+    padding: 98px 0;
+}
+}
+#say{
+    .owl-dots{
+        display: flex;
+        justify-content: center;
+        margin: 80px 0 90px 0;
+        .active{
+            background: #b6907e !important;
+            transition: background 0.5s;
+         
+    }
+    }
+    .dot
+        {  
+            
+                width:12px;
+                height: 12px;
+                background: #5d4a41;
+                border-radius: 12px;
+                margin-right: 18px;
+                border:none;
+                &:last-child{
+                    margin-right: 0;
+                }
+               
+        }
+     
+       
+    padding-top:84px;
+    .avatar{
+        margin-right: 60px;
+    }
+    h4{
+        font-size: 48px;
+        font-family: "Bebas Neue";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 130px;
+      }
+      h5 {
+        font-size: 36px;
+        font-family: "Bebas Neue";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+        
+      }
+      p {
+        font-size: 18px;
+        font-family: "PT Sans";
+        color: rgb(118, 118, 118);
+        line-height: 2;
+        text-align: left;
+        max-width:365px;
+        
+      }
+      
+      
+}
+#footer{
+    
+    #sitemap{
+        background: #0e0e0e;
+        padding-top:92px;
+    }
+    #copyright{
+        background: #0e0e0e;
+        padding: 93px 0 75px 0;
+    }
+    h3{
+            font-size: 30px;
+            font-family: "Bebas Neue";
+            color: rgb(255, 255, 255);
+         
+            line-height: 1.2;
+    }
+    li{
+        a{
+            
+                font-size: 18px;
+                font-family: "Bebas Neue";
+                color: rgb(94, 93, 93);
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 2.667;
+                text-align: left;
+                text-decoration: none;
+            &:hover{
+                color:#977869;
+            }      
+        }
+
+    }
+    form{
+        margin-top:45px;
+         input{
+             background: transparent !important;
+             border: 1px solid #2b2b2b !important;
+             border-radius: 0px !important;
+             height:50px;
+             width:63% !important;
+             padding-left:30px;
+             color: #f2cea2;
+             
+         }
+         button{
+           
+                background-color: rgb(182, 144, 126);
+                
+                width: 36.9%;
+                height: 50px;
+                
+                font-size: 18px;
+                font-family: "Bebas Neue";
+                color: rgb(112, 81, 66);
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.2;
+                border:none;   
+                  
+              
+              
+         }
+    }
+    h2{
+        font-size: 36px;
+        font-family: "Bebas Neue";
+        color: rgb(255, 255, 255);
+        //font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    
+      
+    .slogan{
+        font-size: 14px;
+        font-family: "PT Sans";
+        color: rgb(129, 129, 129);
+        font-style: italic;
+        line-height: 1.2;
+        
+      
+    }
+
+   
+}
+@include media-breakpoint-up(lg){
+    #nav{
+        .icon-menu{
+            display: none;
+        }
+        .logo{
+            h2{
+                left:0 !important;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg){
+   
+    #slider{
+        h3{
+            font-size: 3.25rem;
+        }
+        .carousel-caption{
+            margin-top:120px;
+        }
+        #nav{
+            margin-top:20px;
+        }
+        .buttons{
+            margin-top:20px;
+            margin-left:6px;
+            a{
+                
+                font-size: 16px;
+                font-family: "Bebas Neue";
+                color: rgb(151, 120, 105);
+                font-weight: bold;
+                border:3px solid #977869;
+                padding: 10px 15px;
+                margin-right: 15px;
+                text-decoration: none;
+                transition: all 0.3s;
+
+                
+            }
+        }
+        .list-nav{
+            width:450px !important;
+        }
+    }
+    #services{
+        overflow: hidden;  
+      
+      
+            .height{
+                padding: 5em 0;
+            }
+        p{
+            font-size:1rem;
+        }
+        h4{
+            font-size: 42px;
+        }
+        
+        .content{
+            position: relative;
+            z-index: 1030 !important;
+        }
+        .height{
+            height: auto !important;
+            
+        }
+    }
+    #collection{
+        .my-cards{
+            height: 500px;
+            width:99.6%;
+            img{
+                height: 250px;
+            }
+        }
+        
+    }
+}
+@include media-breakpoint-down(md){
+    #sub-menu{
+        ul{
+            width:100% !important;
+            
+        }
+    }
+    #nav{
+        margin-top: 0 !important; 
+        .list-nav{
+            flex-direction: column;
+            //display: list !important;
+            top: 0;
+            right: 0;
+            position: absolute;
+            top:-1000px;
+           // display: none !important;
+            width: 100% !important;
+            background: rgba(0, 0, 0, 0.884);
+            padding: 1rem;
+            z-index: 1040;
+            transition: all 0.5s;
+        }
+        .menu-active{
+            
+            top: 30px;
+            right:0;
+        }
+    } 
+    #slider{
+        h3{
+            font-size: 3.25rem;
+        }
+        .carousel-caption{
+            margin-top: 10%;
+        }
+        .buttons{
+            margin-top:20px;
+            margin-left:6px;
+            a{
+                
+                font-size: 16px;
+                font-family: "Bebas Neue";
+                color: rgb(151, 120, 105);
+                font-weight: bold;
+                border:3px solid #977869;
+                padding: 10px 15px;
+                margin-right: 15px;
+                text-decoration: none;
+                transition: all 0.3s;
+
+                
+            }
+        }
+        .carousel-indicators{
+            width:200px;
+            margin-bottom: 40px ;
+            
+            li{
+                margin-left: 0;
+            }
+        }
+    }  
+    .avatar{
+        margin-right: 30px !important;
+        img{
+            height: auto;
+        }
+    }
+    .text{
+        p{
+            font-size:1rem;
+        }
+    }
+   
+}
+@include media-breakpoint-down(sm){
+    
+    #sub-menu{
+        .logo_sub-menu{
+            display: none;
+            
+        }
+        .row{
+            justify-content: end !important;
+            height: 45px;
+        }
+        .nav{
+            width:150px;
+            
+        }
+        .search{
+            input{
+                right: 15px !important;
+                top:-7px;
+            }
+        }
+    }
+    #slider{
+        h3{
+            font-size: 1.25rem !important;
+        }
+        #nav{
+            .logo{
+                h2{
+                    font-size: 1.5em !important;
+                }
+            }
+            margin-top:5px;
+            h2{ 
+                font-size:2em;
+            }
+            .slogan{
+                opacity: 0;
+                font-size:0.5em;
+            }
+            .contact{
+                display: none !important; 
+            }
+        }
+    
+    
+    .carousel-caption{
+        margin-top:40px !important ;
+    }
+    .buttons{
+        margin-top:0px !important;
+        margin-left:0px !important;
+        a{
+            
+            font-size: 12px !important;
+            font-family: "Bebas Neue";
+            color: rgb(151, 120, 105);
+            font-weight: bold;
+            border:3px solid #977869;
+            padding: 5px 10px !important;
+            margin-right: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+
+            
+        }
+        }
+        .carousel-indicators{
+            width:200px;
+            margin-bottom: 5px !important;
+            margin-left:-1px !important;
+            li{
+                margin-left: 0;
+            }
+        }
+    }
+    #services{
+        padding-top:5em;
+        .row{
+            
+            align-items: center;
+        }
+        background: none;
+       .height{
+           height: auto;
+           padding: 0;
+        }
+        h4{
+            font-size: 32px;
+            margin:0.5em 0;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    #collection{
+        padding-top:5em;
+        .height{
+            height: auto;
+        }
+        .heading{
+            margin-top:0;
+        }
+        .products{
+            padding-top:1em;
+            padding-bottom: 1em;
+        }
+        h3{
+            font-size: 36px !important;
+            margin: 16px 0;
+        }
+        ul{
+            width:130px;
+        }
+        a{
+            font-size: 14px !important;
+        }
+        .active{
+            &::after{
+                height:8px !important;
+            }
+        }
+       
+       .next, .prev{
+           display: none !important;
+       }
+    }
+    #brand{
+        padding-top:5em !important;
+        .container{
+            .row{
+                justify-content: center !important;
+                svg{
+                    margin-bottom: 1rem;
+                }
+            }
+            
+
+        }
+        .height{
+            padding: 0 !important;
+        }
+    }
+    #say{
+        padding-top:5em;
+        .owl-dots{
+            margin: 2rem 0 0 0;
+        }
+        .d-flex{
+            flex-direction: column;
+            justify-content: center;
+        }
+        h4{
+            margin: 16px 0 2rem 0;
+            font-size: 36px;
+        }
+        .avatar{
+            display: flex;
+            justify-content: center;
+            margin-right: 0 !important;
+            
+            img{
+                width:120px;
+                margin-bottom: 1.2rem;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            p,h5{
+                text-align: center;
+                
+            }
+            h5{
+                font-size: 24px;
+            }
+            p{  
+                margin: 0 auto;
+            }
+        }
+    }
+    #footer{
+        .menu{
+            margin: 3rem 0;
+        }
+
+    }
+}
+
+.p-absolute{
+    position: absolute;
+}
+.p-relative{
+    position: relative;
+}
+.t-0{
+    top:0 !important;
+    
+}
+.b-0{
+    bottom: 0 !important;
+    
+}
+.l-0{
+    left:0 !important;
+}
+.r-0{
+    right: 0 !important;
+}

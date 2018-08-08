@@ -1,0 +1,50 @@
+.animation-man{
+    position: relative;
+}
+
+
+body{
+    background: black;
+}
+.greeting{
+    display: flex;
+    justify-content: center;
+    
+}
+.animation-man:hover .body {
+    
+    animation-name: move-d;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+.animation-man > img{
+    height: 250px;
+    transform: translate(-400%) rotate(0deg);
+}
+
+.slids{
+    color:white;
+
+}
+.slids > h2{
+    display: block;
+    height: 300px;
+    width:400px;
+    font-size:100vw;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move-d{
+  0%{
+    transform: translate(-400%) rotate(0deg);
+  }
+  70%{
+    transform: translate(100%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-400%,-100%) rotate(360deg);
+  }
+}

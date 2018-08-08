@@ -1,0 +1,160 @@
+#nav.container
+                    nav#navbar.navbar.w-100
+                        a.navbar-brand.text-uppercase.m-0(href='#') 
+                            img.logo(src=images['logo.svg'] alt="titptop")
+                            img.slogan(src=images['slogan.svg'] alt="tiptop")
+                        i#open-menu.material-icons reorder
+                        ul.nav.nav-pills
+                            li.nav-item
+                                a.nav-link(href='#aboute')    О компании
+                            li.nav-item
+                                a.nav-link(href='#product')   Продукция
+                            li.nav-item
+                                                               
+                                a.nav-link(href="http://vilparts.by/pages10") Прайс
+                            li.nav-item
+                                                               
+                                a.nav-link(href='#contact')   Контакты
+                        
+                        
+            
+            section#slider
+                .container.fadeIn.wow
+                    .row
+                        .col-12.m-auto
+                            #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                                ol.carousel-indicators
+                                    li.active(data-target='#carouselExampleIndicators', data-slide-to='0') 1
+                                    li(data-target='#carouselExampleIndicators', data-slide-to='1') 2
+                                    li(data-target='#carouselExampleIndicators', data-slide-to='2') 3
+                                    li(data-target='#carouselExampleIndicators', data-slide-to='3') 4
+                                    li(data-target='#carouselExampleIndicators', data-slide-to='4') 5
+                                .carousel-inner
+                                    .carousel-item.active
+                                        img.img-fluid.d-block.w-100(src=slider['5.jpg'], alt='First slide')
+                                        .carousel-caption.d-none.d-md-block
+                                            h5 АВТОМОБИЛЬНЫЙ СЕРВИС
+                                            p Работая с компанией REMA TIP TOP,  вы получаете все передовые технологии, материалы, инструменты и оборудование из первых рук.
+                                    .carousel-item
+                                        img.img-fluid.d-block.w-100(src=slider['1.jpg'], alt='Second slide')
+                                        .carousel-caption.d-none.d-md-block
+                                            h5 ...
+                                            p ...
+                                    .carousel-item
+                                        img.img-fluid.d-block.w-100(src=slider['2.jpg'], alt='Third slide')
+                                        .carousel-caption.d-none.d-md-block
+                                            h5 ...
+                                            p ...
+                                    .carousel-item
+                                        img.img-fluid.d-block.w-100(src=slider['3.jpg'], alt='Third slide')
+                                        .carousel-caption.d-none.d-md-block
+                                            h5 ...
+                                            p ...
+                                    .carousel-item
+                                        img.img-fluid.d-block.w-100(src=slider['4.jpg'], alt='Third slide')
+                                        .carousel-caption.d-none.d-md-block
+                                            h5 ...
+                                            p ...
+                                
+        
+            #aboute-product
+                .container.fadeIn.wow.my-3
+                    
+                    .row
+        
+                        .col-sm-12.col-md-7#aboute
+                            h3.mt-2.p-1.text-uppercase.text-dark О Компании
+                            p.text-dark  Компания АО «РЕММА интернейшнл» основана в 1999 году как представительство компании REMA TIP TOP AG, Германия в России и странах СНГ. Головной офис фирмы находится в г. Москва. Сегодня Компания насчитывает более 500 сотрудников. 
+                            p.text-dark.my-1 В настоящее время фирма имеет более 450 постоянных партнёров во всех странах постсоветского пространства, являющихся крупными и средними предприятиями угольной, цементной, горнодобывающей, горно-химической, горно-обогатительной, химической, нефтехимической и металлургической промышленности.
+                        .col-sm-12.col-md-5#product
+                            h3.mt-2.p-1.text-uppercase.text-dark продукты  
+                            ul
+                                li
+                                    a(href='http://vilparts.by/pages10') Материалы для ремонта и герметизации шин и камер
+                                li
+                                    a(href='http://vilparts.by/pages10') Специальные инструменты для ремонта шин
+                                li
+                                    a(href='http://vilparts.by/pages10') Оборудование для обслуживания шин/сервис
+                                li
+                                    a(href='http://vilparts.by/pages10') Вулканизационные термопрессы и аксессуары
+                                li
+                                    a(href='http://vilparts.by/pages10') Вентили, балансировочное оборудование
+                                li
+                                    a(href='http://vilparts.by/pages10') Химические продукты, безопасность на работе
+
+                        
+                        
+
+
+            #contact
+                .container.fadeIn.wow
+                    .row
+                        .col-12
+                            h3.my-2.p-1.text-uppercase.text-dark Контакты
+
+                    .row
+                        .col-sm-12.col-md-4.text-left
+                            .block.p-1
+                                i.material-icons room
+                                    span    Адресс:
+                                ul
+                                    li г. Минск, пр-т Независимости, д.177, 
+                                    li пом. 3, комната 22
+                            .block.my-4.p-1
+                                i.material-icons perm_phone_msg
+                                    span    Телефоны:
+                                ul
+                                        li тел./факс: +375 17 393-50-04
+                                        li тел.: +375 17 393-50-05
+                                        li МТС: +375 29 777-37-37
+                                        li МТС +375 29 777-99-79
+                                        li Velcom +375 29 117-37-37
+                                        li Velcom +375 29 1111-661    
+                            .block.mb-4.p-1
+                                i.material-icons mail_outline
+                                    span    Електронная почта:
+                                ul
+                                        li  e-mail: info@vilparts.by    
+                               
+                            .block.mb-4.p-1
+                                i.material-icons access_time
+                                    span    Время работы:
+                                ul
+                                    li пн-пт: с 9-00 до 17-00
+                                    li выходной: суббота, воскресенье.
+                        
+                        .col-sm-12.col-md-8.text-left
+                            iframe.p-1(src="https://yandex.ru/map-widget/v1/?um=constructor%3Abeba57ad0a130dcc69ff1356efd829ea1ef1edb8ba1d7350a01fbe1d9e62679f&amp;source=constructor" width="100%" height="555" frameborder="0")
+            #site-map.container-fluide.bg-dark.pt-3.mt-3
+                .container.bg-dark
+                    .row.text-white
+                        .col-sm-12.col-md-4.col-lg-3.mb-3
+                            small
+                                i.material-icons.text-white copyright
+                                span  2018 г. egor1991mac@gmail.com            
+                        .col-sm-12.col-md-4.col-lg-3.mb-3
+                            p Телефоны:
+                            small 
+                                ul.mt-2
+                                            li тел./факс: +375 17 393-50-04
+                                            li тел.: +375 17 393-50-05
+                                            li МТС: +375 29 777-37-37
+                                            li МТС +375 29 777-99-79
+                                            li Velcom +375 29 117-37-37
+                                            li Velcom +375 29 1111-661
+                      
+                        .col-sm-12.col-md-4.col-lg-3
+                            p Навигация:
+                            small 
+                                ul.mt-2
+                                    li
+                                        a.text-white(href='#aboute')  О компании
+                                    li
+                                        a.text-white(href='#product') Продукция
+                                    li
+                                        a.text-white(href='#price') Прайс
+                                    li
+                                        a.text-white(href='#contact') Контакты
+
+
+                        

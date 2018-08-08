@@ -1,0 +1,60 @@
+#contactUs{
+    width:100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size:16px;
+    position: relative;
+  
+    .error{
+        max-width: 100%;
+        padding: .5rem;
+        margin-top: .1rem;
+        font-size: 10px;
+        line-height: 1;
+        color: #fff;
+        background-color: rgba(220, 53, 69, 0.9);
+        border-radius: .2rem;
+        text-shadow: none;
+        position: absolute;
+    }
+    label{
+        font-size: 16px;
+    }
+    .form-control{
+        font-size:16px !important;
+        border:1px solid transparent;
+        background: transparent;
+        border-radius: 0 !important;
+        border-bottom:1px solid rgba(75, 75, 75, 0.1);
+    }
+    .form-item{
+        border-radius: none;
+       
+    }
+    .succes{
+        //max-width: 100%;
+        //padding: .5rem;
+        //margin-top: .1rem;
+        font-size: 16px !important;
+        //line-height: 1;
+        border:1px solid rgba(3, 211, 55, 0.9);
+        //border-radius: 2px;
+        text-shadow: none;
+    }
+    select{
+        border:none;
+    }
+    
+       
+    .w-10{
+        width:10%;
+    }
+    .w-85{
+        width: 85%;
+    }
+}
