@@ -1,0 +1,103 @@
+header.container-fluid
+            nav.row.align-items-center
+                ul.col-3
+                    li.hamburger.not-relative
+                        img(src=require('./img/hamburger_icon.png'), alt="hamburger_icon")
+                        .hide-nav.col-12.col-sm-6.col-md-4.col-lg-2
+                            .close
+                                svg( aria-hidden='true', width='23px', height='25px', data-prefix='fas', data-icon='times', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 352 512')
+                                    path(fill='white', d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z')
+
+                            .links
+                                a.link(href="#") clients
+                                a.link(href="#") news
+                                a.link(href="#") aboute
+                                a.link(href="#") link
+                                a.link(href="#") link
+                                a.link(href="#") link
+                    li
+                        a(href="#") clients
+                            
+                    li
+                        a(href="#") news
+                .col-6
+                    h2.text-center MI TALLENT
+                .col-3.not-relative.search
+                    form(action="")
+                        input(type="text")
+                        .close
+                                svg( aria-hidden='true', width='23px', height='25px', data-prefix='fas', data-icon='times', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 352 512')
+                                    path(fill='black', d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z')
+                    img(src=require('./img/search_icon.png'), alt="search_icon")
+                    
+            #slider.row
+                .container-items.col-12.col-xl-10
+                    .layout-nav
+                        .social-icons
+                            a(href="")
+                                img(src=require('./img/social/slider_facebook.png'), alt="slider_facebook")
+                            a(href="")
+                                img(src=require('./img/social/slider_instagram.png'), alt="slider_instagram")
+                            a(href="")
+                                img(src=require('./img/social/slider_youtube.png'), alt="slider_youtube")
+                            a(href="")
+                                img(src=require('./img/social/slider_twitter.png'), alt="slider_twitter")
+                        .slide-number
+                            .number 01
+                            .line.active
+                            
+                        .slide-buttons
+                            .button-profile VIEW PROFILE
+                           
+                    .layout-slide
+                            .item.activeted()
+                                .text
+                                    h2 Georgina
+                                        br 
+                                        | Alson
+                                        .line
+                                    .slogan young model 2020
+                                .img 
+                                    img(src=require('./img/model.jpg'),alt="")
+                            .item.d-none
+                                .text
+                                    h2 Derek
+                                        br 
+                                        | Anderson
+                                        .line
+                                    .slogan british comedian
+                                .img 
+                                   img(src=require('./img/model2.jpg'),alt="")
+                            .item.d-none
+                                .text
+                                    h2 Georgina
+                                        br 
+                                        | Alson
+                                        .line
+                                    .slogan young model 2020
+                                .img 
+                                    img(src=require('./img/model.jpg'),alt="")
+                            .item.d-none
+                                .text
+                                    h2 Derek
+                                        br 
+                                        | Anderson
+                                        .line
+                                    .slogan british comedian
+                                .img 
+                                   img(src=require('./img/model2.jpg'),alt="")
+                           
+                            .button-play
+                                img(src=require('./img/slider_pause.png') data-play = "play" height="28px" width="24px", alt="slider_play.png")
+                                img.d-none(src=require('./img/slider_play.png') data-play = "pause" height="28px" width="24px", alt="slider_play.png")
+            
+                        
+                .col-2      
+                    .caption-slider
+                        .caption
+                            ul
+                                li.active 01
+                                li 02
+                                li 03
+                                li 04
+                               
