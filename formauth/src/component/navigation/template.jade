@@ -1,0 +1,9 @@
+.container
+    .row
+        .col-12
+            ul
+                each val in items
+                    li.href.not_current(href=val.href)
+                        a(href="#")
+                            i.material-icons=val.icon 
+                            span=val.name

@@ -1,0 +1,7 @@
+.select_block
+    .block
+ul.navigation_items
+    each val in items
+        li.href(href=val.href)
+            i.material-icons=val.icon
+            span=val.name

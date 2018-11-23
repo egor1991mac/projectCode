@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description" content="Агентство эффективного интернет-маркетинга по раскрутке личных аккаунтов или вашего бизнеса: Youtube, Instagram, Facebook, Вконтакте, Одноклассники, LinkedIn …")
+        meta(name="description" content="Создание канала на Youtube под ключ, продвижение инстаграм-аккаунтов, ведение фейсбук (страницы и группы), администрирование вк и ок, таргетированная реклама")
+        meta(name="description" content="Телефоны и адреса smm-агенства Брендс энд Трендс в Спб (Россия) и Минске (Беларусь)")
+        
+        
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons",rel="stylesheet")
+        
+        title Mi tallent
+   
+    body 
+        form
+        .nav
+            .menu
+                img(src=require("./img/burger.png"), alt="menu")  
+            .linkTab.firstTabLink
+                a.active(href="#") 1
+                a(href="#") 2
+                a(href="#") 3
+           
+        .tab.firstTab.active
+                .logo
+                .content
+                    .img
+                        h2 Всего три простых шага
+                            br
+                            | для получения бонусов!
+                    
+                    .ItemsForm
+                        .itemForm
+                            .placeholder Фамилия
+                            input(type="text" vdata="vtext")
+                        .itemForm
+                            .placeholder Имя
+                            input(type="text"
+                            vdata="vtext" required)
+                        .itemForm
+                            .placeholder Отчетсво
+                            input(type="text" vdata="vtext")
+                        .itemForm.radioGrup.bg-none
+                            .box-50
+                                .radio
+                                input.d-none(type="radio" value="men")
+                                label Мужчина
+                                
+                            .box-50
+                                .radio.active
+                                input.d-none(type="radio" women="women")
+                                label Женщина
+                                
+                        .itemForm
+                            .placeholder Дата рожения
+                            input(type="text" value="" vdata="vdata" readonly)
+                        .itemForm.checkboxGrup.bg-none
+                            .checkbox
+                            input.d-none(type="checkbox" value="" required)
+                            label Соглашаюсь 
+                                strong с условиями участия
+                        .itemForm.bg-none
+                            button продолжить
+        .tab.secondTab
+                .logo
+                .content
+                    .img
+                        h2 Половина пути уже
+                            br
+                            | пройдена
+                    
+                    .ItemsForm
+                        .itemForm
+                            .placeholder Телефон
+                            input(type="text" value="" vdata="vphone")
+                        .itemForm
+                            .placeholder Email
+                            input(type="email" value="" vdata="vemail" required)
+                        .itemForm
+                            .placeholder Пароль
+                            input(type="password" value="" vdata="vpassword" required)
+                        .itemForm
+                            .placeholder Повторите пароль
+                            input(type="password"  value="" vdata="vpassword2" required)
+                        .itemForm.bg-none
+                            button продолжить
+        .tab.thirdTab
+                .logo
+                .content
+                    .img
+                        h2 Осталась совсем 
+                            br
+                            | чуть-чуть
+                    
+                    .ItemsForm
+                        h3 На номер 
+                            strong +375293334455 
+                            br
+                            | отправлен код подтверждения
+                        p Введите его в поле ниже:
+                        .itemForm
+                            .placeholder Код
+                            input(type="text" value="" vcode="vcode" required)
+                        .itemForm.bg-none
+                            button Присоединиться
+                
